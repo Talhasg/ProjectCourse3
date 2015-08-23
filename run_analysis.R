@@ -33,4 +33,4 @@ MergedSetSelect$Label<-mapvalues(as.character(MergedSetSelect[[2]]),from=as.char
 #Creating tidy data with average of each activity and label
 MergedSetSelectMelt<-melt(MergedSetSelect,id=c("Subject","Label"))
 part5<-dcast(MergedSetSelectMelt,Subject+Label~variable,mean)
-output<-write.table(part5)
+output<-write.table(part5,"tidy.txt",row.name=FALSE)
