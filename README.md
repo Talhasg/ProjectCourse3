@@ -7,3 +7,10 @@
 * Rename entries in data frame to give descriptive names
 * Output table created
 
+
+# How to run
+
+* Link local repository to your working directory
+* Copy data in working directory
+* Run "run_analysis.R"
+
